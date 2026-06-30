@@ -1,0 +1,26 @@
+# Netlify deployment config for the RAFT static site (vite-react-ssg).
+# Without this, Netlify may publish the repo root (Vite's dev index.html, which
+# loads /src/main.tsx) → MIME error + white screen. This builds the site and
+# publishes the prerendered output in dist/.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Every real route is prerendered to its own HTML, which Netlify serves directly
+# (e.g. /about/ → about/index.html). This fallback only fires for paths with no
+# matching file, so the app can render its in-app 404. force defaults to false,
+# so it never shadows real files, assets or prerendered pages.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Long-cache the content-hashed build assets (safe — filenames change on rebuild).
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
