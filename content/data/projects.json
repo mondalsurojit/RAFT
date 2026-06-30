@@ -1,0 +1,119 @@
+{
+  "trlScale": [
+    { "level": 1, "label": "Basic principles" },
+    { "level": 2, "label": "Concept formulated" },
+    { "level": 3, "label": "Experimental proof" },
+    { "level": 4, "label": "Validated in lab" },
+    { "level": 5, "label": "Validated in relevant environment" },
+    { "level": 6, "label": "Demonstrated in relevant environment" },
+    { "level": 7, "label": "Prototype in operational environment" },
+    { "level": 8, "label": "System complete & qualified" },
+    { "level": 9, "label": "Proven in operations" }
+  ],
+  "projects": [
+    {
+      "slug": "snapflood",
+      "image": "/images/stock/snap-1.jpg",
+      "title": "SnapFlood — Crowdsourced Flood Intelligence",
+      "category": "Products & Platforms",
+      "summary": "A deployed citizen-science app collecting geotagged urban-flood reports across Web, Android and iOS to build a real-time flood archive.",
+      "trl": 8,
+      "status": "Deployed",
+      "region": "Hyderabad · Global",
+      "tags": ["Citizen science", "Mobile", "Data collection"],
+      "icon": "Camera",
+      "accent": "brand"
+    },
+    {
+      "slug": "ufis",
+      "image": "/images/stock/decision-support.jpg",
+      "title": "UFIS — Urban Flood Information System",
+      "category": "Flagship Systems",
+      "summary": "An integrated system to forecast rainfall and floods and deliver flood-relevant information in advance across a city, focused on Hyderabad.",
+      "trl": 5,
+      "status": "In development",
+      "region": "Hyderabad",
+      "tags": ["Forecasting", "Integration", "Decision support"],
+      "icon": "Gauge",
+      "accent": "brand"
+    },
+    {
+      "slug": "riverine-flood-forecasting",
+      "image": "/images/stock/hydrodynamic.jpg",
+      "title": "Riverine Flood Forecasting",
+      "category": "Modelling & Forecasting",
+      "summary": "Hydrologic-hydrodynamic and statistical-dynamical flood-inundation forecasting across major Indian river basins.",
+      "trl": 5,
+      "status": "Active research",
+      "region": "Brahmaputra · Godavari · Narmada",
+      "tags": ["Hydrodynamics", "Real-time", "Inundation"],
+      "icon": "Waves",
+      "accent": "aqua"
+    },
+    {
+      "slug": "rainfall-nowcasting",
+      "image": "/images/stock/varsha-2.jpg",
+      "title": "Radar-based Rainfall Nowcasting",
+      "category": "AI / ML",
+      "summary": "Deep-learning rainfall nowcasting and forecasting from radar reflectivity data for short-lead warning.",
+      "trl": 4,
+      "status": "Active research",
+      "region": "Hyderabad",
+      "tags": ["Deep learning", "Radar", "Nowcasting"],
+      "icon": "Radar",
+      "accent": "indigo"
+    },
+    {
+      "slug": "urban-flood-risk-mapping",
+      "image": "/images/stock/rainfall-runoff.jpg",
+      "title": "Urban Flood-Risk Mapping",
+      "category": "Risk & Resilience",
+      "summary": "Flood-risk mapping that integrates hazard, exposure and vulnerability to guide planning and response.",
+      "trl": 5,
+      "status": "Active research",
+      "region": "Hyderabad",
+      "tags": ["Hazard", "GIS", "Vulnerability"],
+      "icon": "Map",
+      "accent": "signal"
+    },
+    {
+      "slug": "satellite-rainfall",
+      "image": "/images/stock/remote-sensing.jpg",
+      "title": "Satellite Rainfall Evaluation",
+      "category": "Remote Sensing",
+      "summary": "Assessing satellite precipitation (IMERG) across space and time scales for developing urban regions in India.",
+      "trl": 4,
+      "status": "Active research",
+      "region": "India",
+      "tags": ["IMERG", "Remote sensing", "Validation"],
+      "icon": "Satellite",
+      "accent": "aqua"
+    },
+    {
+      "slug": "social-media-flood-extraction",
+      "image": "/images/stock/ai-climate.jpg",
+      "title": "Social-Media Flood Extraction",
+      "category": "Data Science",
+      "summary": "Extracting flood-relevant information and hotspots from social media to enrich real-time flood awareness.",
+      "trl": 4,
+      "status": "Active research",
+      "region": "Hyderabad",
+      "tags": ["NLP", "Social data", "Hotspots"],
+      "icon": "Share2",
+      "accent": "indigo"
+    },
+    {
+      "slug": "varshamitra",
+      "image": "/images/stock/varsha-1.jpg",
+      "title": "VarshaAnalytics",
+      "category": "Products & Platforms",
+      "summary": "A rainfall-analytics product grown from the VarshaMitra community mascot — bringing station, satellite and model rainfall into one accessible view.",
+      "trl": 8,
+      "status": "Deployed",
+      "region": "India",
+      "tags": ["Rainfall analytics", "Community"],
+      "icon": "CloudRain",
+      "accent": "aqua"
+    }
+  ]
+}

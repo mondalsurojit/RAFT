@@ -1,0 +1,151 @@
+{
+  "proposalOpportunities": [
+    {
+      "title": "Collaborative Research Proposals",
+      "type": "Academia",
+      "summary": "Co-develop funded research in hydroinformatics, flood forecasting and AI-for-climate.",
+      "detail": "Partner with RAFT as co-PI or collaborating institution on national and international calls.",
+      "icon": "Beaker",
+      "ctaLabel": "Propose a collaboration",
+      "ctaHref": "/contact",
+      "placeholder": true
+    },
+    {
+      "title": "Government & Agency Partnerships",
+      "type": "Public sector",
+      "summary": "Translate flood science into operational systems for cities, states and agencies.",
+      "detail": "Pilot UFIS components, flood-risk mapping and early-warning workflows in your jurisdiction.",
+      "icon": "Building2",
+      "ctaLabel": "Start a partnership",
+      "ctaHref": "/contact",
+      "placeholder": true
+    },
+    {
+      "title": "Industry & CSR Collaborations",
+      "type": "Industry",
+      "summary": "Sponsor applied research or co-create products addressing flood and water resilience.",
+      "detail": "Engage through sponsored projects, data partnerships or CSR-funded innovation.",
+      "icon": "Handshake",
+      "ctaLabel": "Explore options",
+      "ctaHref": "/contact",
+      "placeholder": true
+    }
+  ],
+  "supportOptions": [
+    {
+      "title": "Fund a Research Theme",
+      "type": "Philanthropy",
+      "summary": "Back a focused programme — urban flooding, early warning or AI-for-climate.",
+      "icon": "HandHeart",
+      "ctaLabel": "Talk to us",
+      "ctaHref": "/contact",
+      "placeholder": true
+    },
+    {
+      "title": "Sponsor a Product",
+      "type": "Innovation",
+      "summary": "Help take SnapFlood, UFIS or VarshaAnalytics from research to wider deployment.",
+      "icon": "Rocket",
+      "ctaLabel": "Sponsor",
+      "ctaHref": "/contact",
+      "placeholder": true
+    },
+    {
+      "title": "Partner on a Pilot",
+      "type": "Partnership",
+      "summary": "Co-fund a city or basin pilot and shape tools around real operational needs.",
+      "icon": "Handshake",
+      "ctaLabel": "Propose a pilot",
+      "ctaHref": "/contact",
+      "placeholder": true
+    },
+    {
+      "title": "Equipment & Compute",
+      "type": "In-kind",
+      "summary": "Contribute sensors, drones, data or compute that accelerate the work.",
+      "icon": "Banknote",
+      "ctaLabel": "Offer support",
+      "ctaHref": "/contact",
+      "placeholder": true
+    }
+  ],
+  "faqGroups": [
+    {
+      "title": "About RAFT",
+      "faqs": [
+        {
+          "q": "What does RAFT stand for?",
+          "a": "RAFT is Rainfall-runoff Analysis, Modelling and Forecasting Tools — a hydroinformatics research group and innovation lab in the Department of Civil Engineering at IIT Hyderabad."
+        },
+        {
+          "q": "What is UFIS?",
+          "a": "The Urban Flood Information System (UFIS) is RAFT’s flagship effort: it brings rainfall, hydrologic and flood-flow information together into forecasts and decision-support for cities and agencies."
+        },
+        {
+          "q": "Where is RAFT based?",
+          "a": "RAFT is hosted at the Department of Civil Engineering, IIT Hyderabad."
+        }
+      ]
+    },
+    {
+      "title": "Collaboration & partnerships",
+      "faqs": [
+        {
+          "q": "How can my institution collaborate with RAFT?",
+          "a": "Reach out via the contact page with a short note on your area of interest. We collaborate on funded research, joint proposals, student exchange and operational pilots."
+        },
+        {
+          "q": "Do you work with city and state agencies?",
+          "a": "Yes. A core goal of UFIS is to deliver flood-relevant information to decision-makers, so we actively seek partnerships with municipal and state agencies."
+        },
+        {
+          "q": "Can industry partners work with RAFT?",
+          "a": "Yes — through sponsored research, data partnerships or CSR-funded innovation. Get in touch and we’ll shape an engagement that fits."
+        }
+      ]
+    },
+    {
+      "title": "Students & joining",
+      "faqs": [
+        {
+          "q": "Can students join RAFT?",
+          "a": "Yes — RAFT welcomes PhD, Master’s and project students. Doctoral admissions are processed through IIT Hyderabad; for project and internship roles, get in touch directly."
+        },
+        {
+          "q": "How do PhD admissions work?",
+          "a": "Doctoral admissions run through IIT Hyderabad’s standard process. If your research interests align with RAFT, mention it when you apply and feel free to reach out beforehand."
+        }
+      ]
+    },
+    {
+      "title": "Supporting our work",
+      "faqs": [
+        {
+          "q": "How can we support RAFT’s work?",
+          "a": "Support ranges from funding a research theme and sponsoring a product to co-funding a pilot or contributing equipment, data and compute. Tell us your goals and we’ll tailor an arrangement."
+        },
+        {
+          "q": "Can we sponsor a specific product or pilot?",
+          "a": "Yes — you can sponsor a product such as SnapFlood or VarshaAnalytics, or co-fund a city or basin pilot shaped around real operational needs."
+        }
+      ]
+    },
+    {
+      "title": "Products & data",
+      "faqs": [
+        {
+          "q": "What is SnapFlood?",
+          "a": "SnapFlood is a free citizen-science app that lets anyone capture and upload geotagged flood photos and videos, building a real-time flood-observation archive that feeds research, modelling and faster municipal response. It’s available on Web, Android and iOS."
+        },
+        {
+          "q": "Is SnapFlood free to use?",
+          "a": "Yes — SnapFlood is a free, lightweight app and needs no specialist hardware."
+        },
+        {
+          "q": "What is VarshaAnalytics?",
+          "a": "VarshaAnalytics is RAFT’s rainfall-analytics product — it brings station, radar, satellite and model rainfall together into a single, easy-to-read view for communities and decision-makers."
+        }
+      ]
+    }
+  ]
+}

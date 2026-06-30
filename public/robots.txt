@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raft.iith.ac.in/sitemap.xml

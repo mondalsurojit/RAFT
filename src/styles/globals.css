@@ -1,0 +1,276 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --nav-h: 76px;
+    --brand-rgb: 24 136 236;
+    --aqua-rgb: 31 164 150;
+    /* Swiper theming */
+    --swiper-theme-color: #1888ec;
+    --swiper-pagination-bullet-inactive-color: #bdcad9;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+  }
+
+  * {
+    @apply border-ink-200;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--nav-h) + 16px);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  body {
+    @apply bg-white font-sans text-ink-700 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-display font-semibold tracking-tight text-ink-900;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: rgb(var(--brand-rgb) / 0.16);
+    color: #0a2747;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-500/70 ring-offset-2 ring-offset-white;
+  }
+
+  /* Refined scrollbar (desktop) */
+  @media (pointer: fine) {
+    ::-webkit-scrollbar {
+      width: 11px;
+      height: 11px;
+    }
+    ::-webkit-scrollbar-thumb {
+      @apply rounded-full border-[3px] border-solid border-transparent bg-ink-300 bg-clip-content;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      @apply bg-ink-400;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  }
+}
+
+@layer components {
+  /* Section vertical rhythm */
+  .section {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  /* Eyebrow / kicker label above headings */
+  .kicker {
+    @apply inline-flex items-center gap-2 text-2xs font-semibold uppercase tracking-[0.18em] text-brand-700;
+  }
+
+  /* Premium link underline */
+  .link-underline {
+    @apply relative inline-flex items-center gap-1 font-medium text-brand-700 transition-colors hover:text-brand-800;
+  }
+}
+
+@layer utilities {
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+  .text-gradient-animated {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(110deg, #0a56a2, #1888ec, #1fa496, #1888ec, #0a56a2);
+    background-size: 200% auto;
+    @apply animate-gradient-x;
+  }
+
+  /* Glass surface */
+  .glass {
+    @apply border border-white/60 bg-white/70 backdrop-blur-xl;
+  }
+
+  /* Hairline divider */
+  .hairline {
+    @apply border-t border-ink-200/70;
+  }
+
+  /* Fade the edges of an overflow region (e.g. logo marquee) */
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  /* Balanced narrow text */
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* ============================================================
+   Animated gradient border (pre-footer CTA)
+   Rotates the gradient's ANGLE via @property — the element itself
+   never transforms, so there is no centering/clipping conflict and
+   the colour visibly travels around the edge. Degrades to a static
+   gradient where @property is unsupported, and stops for users who
+   prefer reduced motion.
+   ============================================================ */
+@property --raft-border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes raft-border-rotate {
+  to {
+    --raft-border-angle: 360deg;
+  }
+}
+
+.animated-border {
+  position: relative;
+  isolation: isolate;
+}
+
+.animated-border::before,
+.animated-border::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--raft-border-angle),
+    #1888ec 0deg,
+    #43c0b0 70deg,
+    #7cdac9 115deg,
+    #eaf6ff 150deg,
+    #43a8fd 205deg,
+    #0a56a2 285deg,
+    #1888ec 360deg
+  );
+  animation: raft-border-rotate 6s linear infinite;
+}
+
+/* Crisp travelling frame — its thickness is the element's padding. */
+.animated-border::before {
+  inset: 0;
+  z-index: -1;
+}
+
+/* Soft, blurred halo — a faint, immersive ambient glow rather than a bright ring. */
+.animated-border::after {
+  inset: -10px;
+  z-index: -2;
+  opacity: 0.18;
+  filter: blur(26px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-border::before,
+  .animated-border::after {
+    animation: none;
+  }
+}
+
+/* ============================================================
+   Brand preloader (src/components/fx/Preloader.tsx)
+   A light, on-theme veil that holds the logo briefly, then fades
+   its background alpha and backdrop blur together so the page
+   resolves out of a soft blur. Pure CSS so it also dismisses with
+   JS disabled; React just unmounts the node on animation end.
+   ============================================================ */
+.raft-preloader {
+  background-color: rgb(247 250 253 / 1);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  animation: raft-preloader-out 1500ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes raft-preloader-out {
+  0%,
+  38% {
+    background-color: rgb(247 250 253 / 1);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+  }
+  100% {
+    background-color: rgb(247 250 253 / 0);
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    visibility: hidden;
+  }
+}
+
+.raft-preloader-content {
+  animation: raft-preloader-content 1500ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes raft-preloader-content {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.97);
+  }
+  16% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  52% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-4px) scale(1.03);
+  }
+}
+
+.raft-preloader-glow {
+  animation: raft-preloader-glow 1500ms ease forwards;
+}
+
+@keyframes raft-preloader-glow {
+  0% {
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.raft-preloader-bar {
+  animation: raft-preloader-bar 1.1s ease-in-out infinite;
+}
+
+@keyframes raft-preloader-bar {
+  0% {
+    transform: translateX(-140%);
+  }
+  100% {
+    transform: translateX(240%);
+  }
+}

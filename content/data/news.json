@@ -1,0 +1,84 @@
+{
+  "newsItems": [
+    {
+      "title": "Hyderabad floods: IIT Hyderabad’s Urban Flood Information System",
+      "date": "Oct 2023",
+      "source": "The Times of India",
+      "category": "press",
+      "excerpt": "A photo feature on RAFT’s Urban Flood Information System (UFIS) for Hyderabad.",
+      "href": "https://timesofindia.indiatimes.com/city/hyderabad/hyderabad-floods-iit-hyderabad-rainfal-urban-flood-information-system/photostory/104211346.cms"
+    },
+    {
+      "title": "IIT-H developing UFIS to tackle city flooding",
+      "date": "Oct 2023",
+      "source": "The Hindu",
+      "category": "press",
+      "excerpt": "Lead researcher Dr. Satish Regonda on building a flood information system to make Hyderabad flood resilient.",
+      "href": "https://www.thehindu.com/news/national/telangana/iit-h-developing-ufis-to-tackle-city-flooding/article67384335.ece"
+    },
+    {
+      "title": "Urban Flood Information System aims to transform city’s resilience",
+      "date": "06 Oct 2023",
+      "source": "Deccan Chronicle",
+      "category": "press",
+      "excerpt": "Feature on UFIS and the launch of VarshaMitra — a mascot promoting SnapFlood’s crowd-sourced flood data.",
+      "href": "https://www.deccanchronicle.com/nation/in-other-news/061023/innovative-urban-flood-information-system-aims-to-transform-citys-res.html"
+    },
+    {
+      "title": "Urban flood info system: IIT developing tech to mitigate catastrophic urban flooding",
+      "date": "Oct 2023",
+      "source": "The Economic Times",
+      "category": "press",
+      "excerpt": "IIT Hyderabad’s data-driven approach to reducing the impact of urban floods.",
+      "href": "https://economictimes.indiatimes.com/news/india/urban-flood-info-system-iit-developing-tech-to-mitigate-catastrophic-urban-flooding/articleshow/104216623.cms"
+    },
+    {
+      "title": "IIT Hyderabad developing tech to address urban flooding",
+      "date": "Oct 2023",
+      "source": "The Times of India",
+      "category": "press",
+      "excerpt": "Coverage of RAFT’s research to forecast and manage urban floods in Hyderabad.",
+      "href": "https://timesofindia.indiatimes.com/city/hyderabad/iit-hyderabad-developing-tech-to-address-urban-flooding/articleshow/104199157.cms"
+    },
+    {
+      "title": "Community participation key to a flood-resilient city",
+      "date": "Oct 2023",
+      "source": "The Indian Express",
+      "category": "press",
+      "excerpt": "How citizen participation — via tools like SnapFlood — strengthens urban flood resilience.",
+      "href": "https://indianexpress.com/article/cities/hyderabad/iit-hyderabad-community-participation-flood-resilient-city-8971373/"
+    },
+    {
+      "title": "IITH embarks on pioneering urban flood mitigation project for Hyderabad",
+      "date": "Oct 2023",
+      "source": "Telangana Today",
+      "category": "press",
+      "excerpt": "IIT Hyderabad’s project to bolster Hyderabad’s resilience to urban flooding.",
+      "href": "https://telanganatoday.com/iith-embarks-on-pioneering-urban-flood-mitigation-project-to-bolster-hyderabads-resilience"
+    },
+    {
+      "title": "IIT-H researchers to develop data-driven tech to alert Hyderabad on floods",
+      "date": "2023",
+      "source": "NewsMeter",
+      "category": "press",
+      "excerpt": "Report on RAFT’s data-driven approach to forecasting and alerting for urban floods.",
+      "href": "https://newsmeter.in/tech-startups/iit-h-researchers-to-develop-data-driven-tech-to-alert-hyderabad-on-floods-718845"
+    },
+    {
+      "title": "IITH initiates a groundbreaking endeavour to tackle urban flooding in Hyderabad",
+      "date": "2023",
+      "source": "The Hans India",
+      "category": "press",
+      "excerpt": "Coverage of UFIS and SnapFlood, including flood-hotspot work presented at AGU 2021.",
+      "href": "https://www.thehansindia.com/hans/education-careers/iith-initiates-a-groundbreaking-endeavor-to-tackle-persistent-issue-of-urban-flooding-in-hyderabad-827649"
+    }
+  ],
+  "mediaGallery": [
+    { "type": "image", "title": "Field data collection", "placeholder": true },
+    { "type": "image", "title": "Flood-mapping workshop", "placeholder": true },
+    { "type": "video", "title": "How SnapFlood works", "placeholder": true },
+    { "type": "image", "title": "Community engagement", "placeholder": true },
+    { "type": "image", "title": "UFIS dashboard preview", "placeholder": true },
+    { "type": "video", "title": "RAFT research overview", "placeholder": true }
+  ]
+}

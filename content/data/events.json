@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "title": "Workshop on Urban Flood Forecasting & Early Warning",
+      "date": "To be announced",
+      "location": "IIT Hyderabad",
+      "kind": "Workshop",
+      "description": "Hands-on sessions on rainfall nowcasting, inundation modelling and decision-support for cities.",
+      "status": "upcoming",
+      "placeholder": true
+    },
+    {
+      "title": "SnapFlood Community Data Drive",
+      "date": "Monsoon season",
+      "location": "Hyderabad",
+      "kind": "Community",
+      "description": "A campaign inviting citizens to contribute geotagged flood reports during the monsoon.",
+      "status": "upcoming",
+      "placeholder": true
+    },
+    {
+      "title": "Seminar — AI for Climate & Water",
+      "date": "To be announced",
+      "location": "Online",
+      "kind": "Seminar",
+      "description": "Talks on machine learning for forecasting, downscaling and flood-risk assessment.",
+      "status": "upcoming",
+      "placeholder": true
+    },
+    {
+      "title": "AGU — Urban flood-hotspot research presentation",
+      "date": "2021",
+      "location": "American Geophysical Union",
+      "kind": "Conference",
+      "description": "RAFT presented work on extracting urban flood hotspots — referenced in press coverage.",
+      "status": "past",
+      "placeholder": true
+    },
+    {
+      "title": "VarshaMitra mascot launch",
+      "date": "Oct 2023",
+      "location": "IIT Hyderabad",
+      "kind": "Outreach",
+      "description": "Public launch of the VarshaMitra mascot promoting community flood-data collection.",
+      "status": "past",
+      "placeholder": true
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "metrics": {
+    "citations": 1822,
+    "hIndex": 15,
+    "i10Index": 20,
+    "source": "Google Scholar",
+    "snapshot": "2026"
+  },
+  "publications": [
+    {
+      "title": "Climatological features of high temporal resolution rainfall over Hyderabad city, India",
+      "venue": "Urban Climate, 42, 101118",
+      "year": 2022,
+      "doi": "10.1016/j.uclim.2022.101118",
+      "area": "Climate & Hydroclimatology"
+    },
+    {
+      "title": "Insights on satellite-based IMERG precipitation estimates at multiple space and time scales for a developing urban region in India",
+      "venue": "Journal of Hydrometeorology, 24(6), 977–996",
+      "year": 2023,
+      "doi": "10.1175/JHM-D-22-0160.1",
+      "area": "Remote Sensing"
+    },
+    {
+      "title": "Two-dimensional flood inundation modeling in the Godavari River Basin, India — insights on model output uncertainty",
+      "venue": "Water, 13(2), 191",
+      "year": 2021,
+      "doi": "10.3390/w13020191",
+      "area": "Flood Modelling"
+    },
+    {
+      "title": "Multi-spatial resolution rainfall-runoff modelling — a case study of Sabari river basin, India",
+      "venue": "Water, 13(9), 1224",
+      "year": 2021,
+      "doi": "10.3390/w13091224",
+      "area": "Rainfall-Runoff Modelling"
+    },
+    {
+      "title": "Role of short-term weather forecast horizon in irrigation scheduling and crop water productivity of rice",
+      "venue": "Journal of Water Resources Planning and Management, 147(8)",
+      "year": 2021,
+      "area": "Water Management"
+    },
+    {
+      "title": "Modified calibration strategies and parameter regionalization potential for streamflow estimation using a hydrological model",
+      "venue": "Hydrological Sciences Journal",
+      "year": 2024,
+      "doi": "10.1080/02626667.2024.2335294",
+      "area": "Rainfall-Runoff Modelling"
+    },
+    {
+      "title": "Using climate regionalization to understand CFSv2 precipitation performance for the Conterminous United States",
+      "venue": "Geophysical Research Letters, 43(12), 6485–6492",
+      "year": 2016,
+      "doi": "10.1002/2016GL069150",
+      "area": "Climate & Hydroclimatology"
+    },
+    {
+      "title": "Verification of temperature, precipitation, and streamflow forecasts from the NOAA/NWS HEFS: 1. Experimental design and forcing verification",
+      "venue": "Journal of Hydrology, 519, 2869–2889",
+      "year": 2014,
+      "doi": "10.1016/j.jhydrol.2014.05.028",
+      "area": "Forecasting"
+    },
+    {
+      "title": "The science of NOAA’s operational Hydrologic Ensemble Forecast Service",
+      "venue": "Bulletin of the American Meteorological Society, 95(1), 79–98",
+      "year": 2014,
+      "doi": "10.1175/BAMS-D-12-00081.1",
+      "area": "Forecasting"
+    },
+    {
+      "title": "Short-term ensemble streamflow forecasting using operationally-produced single-valued forecasts (HMOS)",
+      "venue": "Journal of Hydrology, 497, 80–96",
+      "year": 2013,
+      "doi": "10.1016/j.jhydrol.2013.05.028",
+      "area": "Forecasting"
+    },
+    {
+      "title": "Prototype decision support system for operations on the Gunnison basin with improved forecasts",
+      "venue": "Journal of Water Resources Planning and Management, 137(5), 428–438",
+      "year": 2011,
+      "doi": "10.1061/(ASCE)WR.1943-5452.0000133",
+      "area": "Water Management"
+    },
+    {
+      "title": "A multimodel ensemble forecast framework: application to spring seasonal flows in the Gunnison River Basin",
+      "venue": "Water Resources Research, 42(9)",
+      "year": 2006,
+      "doi": "10.1029/2005WR004653",
+      "area": "Forecasting"
+    },
+    {
+      "title": "Seasonal cycle shifts in hydroclimatology over the western United States",
+      "venue": "Journal of Climate, 18(2), 372–384",
+      "year": 2005,
+      "doi": "10.1175/JCLI-3272.1",
+      "area": "Climate & Hydroclimatology"
+    },
+    {
+      "title": "Local polynomial method for ensemble forecast of time series",
+      "venue": "Nonlinear Processes in Geophysics, 12(3), 397–406",
+      "year": 2005,
+      "area": "Forecasting"
+    },
+    {
+      "title": "Temporal scaling in river flow: can it be chaotic?",
+      "venue": "Hydrological Sciences Journal, 49(3), 373–386",
+      "year": 2004,
+      "area": "Rainfall-Runoff Modelling"
+    }
+  ]
+}

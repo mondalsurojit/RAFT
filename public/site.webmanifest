@@ -1,0 +1,13 @@
+{
+  "name": "RAFT — Rainfall-runoff Analysis Modelling and Forecasting Tools",
+  "short_name": "RAFT",
+  "description": "Hydroinformatics, flood forecasting and AI-for-climate research at IIT Hyderabad.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a56a2",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

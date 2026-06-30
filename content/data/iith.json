@@ -1,0 +1,18 @@
+{
+  "name": "Indian Institute of Technology Hyderabad",
+  "short": "IIT Hyderabad",
+  "abbr": "IITH",
+  "motto": "Inventing and Innovating in Technology for Humanity",
+  "established": "2008",
+  "location": "Kandi, Sangareddy district, Telangana, India",
+  "campus": "A ~576-acre campus at Kandi, Sangareddy.",
+  "logo": "/images/brand/iith-logo.png",
+  "logoDescription": "Designed by Dr. D. Udaya Kumar (IIT Guwahati): two stylised letter “i”s share a common dot and form an “H”, beneath a sun symbolising knowledge, growth and creation.",
+  "colorsNote": "IIT Hyderabad publishes its logo colours in CMYK only; any hex values used on this site are unofficial sRGB approximations.",
+  "urls": {
+    "main": "https://www.iith.ac.in/",
+    "civil": "https://civil.iith.ac.in/",
+    "faculty": "https://www.iith.ac.in/ce/satishr/"
+  },
+  "affiliation": "RAFT is hosted by the Department of Civil Engineering, IIT Hyderabad."
+}

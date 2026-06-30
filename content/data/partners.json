@@ -1,0 +1,50 @@
+{
+  "funders": [
+    {
+      "name": "DST-SPLICE",
+      "fullName": "Strategic Programmes, Large Initiatives & Coordinated Action Enabler — Department of Science & Technology",
+      "kind": "funder",
+      "role": "Heads the DST Climate Change Programme (NMSKCC, NMSHE); focus areas include floods, droughts, urban climate and extreme weather.",
+      "url": "https://dst.gov.in/splice-3",
+      "icon": "Landmark"
+    },
+    {
+      "name": "AI CoE for Sustainable Cities",
+      "fullName": "Centre of Excellence in Artificial Intelligence for Sustainable Cities",
+      "kind": "academic",
+      "role": "An IIT Kanpur-led consortium (awarded by the Ministry of Education, 2024) on forecasting and modelling for urban sustainability — including water.",
+      "url": "https://www.iitk.ac.in/center-of-excellence-on-artificial-intelligence-for-sustainable-cities",
+      "icon": "BrainCircuit"
+    },
+    {
+      "name": "Ministry of Education",
+      "fullName": "Ministry of Education, Government of India",
+      "kind": "ministry",
+      "role": "Funding ministry for the national AI Centres of Excellence, including Sustainable Cities.",
+      "url": "https://www.education.gov.in/",
+      "icon": "GraduationCap",
+      "logo": "/images/brand/funders/moe.svg"
+    },
+    {
+      "name": "Ministry of Science & Technology",
+      "fullName": "Ministry of Science & Technology, Government of India",
+      "kind": "ministry",
+      "role": "Parent ministry of the Department of Science & Technology (DST), which hosts SPLICE and the Climate Change Programme.",
+      "url": "https://most.gov.in/",
+      "icon": "Landmark",
+      "logo": "/images/brand/funders/emblem.svg"
+    }
+  ],
+  "collaborators": [
+    { "name": "IIT Delhi", "kind": "academic", "role": "Real-time flood-inundation forecasting collaboration.", "url": "https://home.iitd.ac.in/", "icon": "GraduationCap" },
+    { "name": "University of Colorado Boulder", "kind": "academic", "role": "Hydroclimatology and forecasting research collaboration.", "url": "https://www.colorado.edu/", "icon": "GraduationCap" },
+    { "name": "IIT Gandhinagar", "kind": "academic", "role": "Flood-inundation forecasting collaboration.", "url": "https://iitgn.ac.in/", "icon": "GraduationCap" },
+    { "name": "IIT Guwahati", "kind": "academic", "role": "Riverine flood research collaboration.", "url": "https://www.iitg.ac.in/", "icon": "GraduationCap" },
+    { "name": "IIT Bhubaneswar", "kind": "academic", "role": "Flood-forecasting research collaboration.", "url": "https://www.iitbbs.ac.in/", "icon": "GraduationCap" }
+  ],
+  "partnerNote": "Organisation identities and roles are verified from public sources. Specific funding linkages should be confirmed with the RAFT team before formal publication.",
+  "hostNote": {
+    "icon": "Microscope",
+    "text": "RAFT is hosted at the Department of Civil Engineering, IIT Hyderabad."
+  }
+}

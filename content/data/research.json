@@ -1,0 +1,116 @@
+{
+  "researchAreas": [
+    {
+      "slug": "hydroinformatics",
+      "image": "/images/stock/hydroinformatics.jpg",
+      "title": "Hydroinformatics",
+      "summary": "Integrating data, computational modelling and information technology to turn hydrological data into decisions for managing water systems.",
+      "keywords": ["Water data", "Scientific computing", "Data assimilation", "Decision support"],
+      "icon": "Network",
+      "accent": "brand"
+    },
+    {
+      "slug": "rainfall-runoff-modelling",
+      "image": "/images/stock/rainfall-runoff.jpg",
+      "title": "Rainfall-Runoff Modelling",
+      "summary": "Representing how precipitation becomes streamflow across a catchment — from conceptual lumped schemes to physically based distributed models.",
+      "keywords": ["Catchment hydrology", "Streamflow prediction", "Calibration", "Distributed models"],
+      "icon": "Droplets",
+      "accent": "aqua"
+    },
+    {
+      "slug": "urban-flood-forecasting",
+      "image": "/images/stock/snap-1.jpg",
+      "title": "Urban Flood Forecasting & Early Warning",
+      "summary": "Short-lead-time forecasting and alerting for pluvial, fluvial and coastal flooding by coupling rainfall nowcasts, drainage models and warning frameworks.",
+      "keywords": ["Pluvial flooding", "Nowcasting", "Early warning", "Urban drainage"],
+      "icon": "CloudRain",
+      "accent": "signal"
+    },
+    {
+      "slug": "hydrodynamic-modelling",
+      "image": "/images/stock/hydrodynamic.jpg",
+      "title": "Hydrological & Hydrodynamic Modelling",
+      "summary": "Simulating water movement through catchments, rivers and floodplains — from basin water balances to 1D/2D shallow-water solutions for flood extent and depth.",
+      "keywords": ["1D/2D modelling", "Flood inundation", "River hydraulics", "Floodplain mapping"],
+      "icon": "Waves",
+      "accent": "brand"
+    },
+    {
+      "slug": "remote-sensing-gis",
+      "image": "/images/stock/remote-sensing.jpg",
+      "title": "Remote Sensing & GIS for Water",
+      "summary": "Using satellite and airborne observation with GIS to parameterise models and map floods where ground data are sparse.",
+      "keywords": ["Satellite RS", "GIS", "Digital elevation models", "Flood mapping"],
+      "icon": "Satellite",
+      "accent": "aqua"
+    },
+    {
+      "slug": "ai-for-climate-water",
+      "image": "/images/stock/ai-climate.jpg",
+      "title": "AI / ML for Climate & Water",
+      "summary": "Learning patterns from large hydrometeorological and climate datasets to improve forecasting, downscaling and emulation of complex water processes.",
+      "keywords": ["Deep learning", "Physics-informed ML", "Downscaling", "Surrogate models"],
+      "icon": "BrainCircuit",
+      "accent": "indigo"
+    },
+    {
+      "slug": "decision-support",
+      "image": "/images/stock/decision-support.jpg",
+      "title": "Decision-Support & Risk Communication",
+      "summary": "Translating forecasts and risk assessments into tools, visualisations and impact-based information for planning, response and policy.",
+      "keywords": ["Impact-based forecasting", "Risk communication", "Uncertainty", "Stakeholders"],
+      "icon": "Gauge",
+      "accent": "signal"
+    }
+  ],
+  "capabilities": [
+    {
+      "title": "Urban flood modelling — Hyderabad",
+      "description": "Incorporating satellite rainfall, optical remote sensing and crowdsourced data extraction.",
+      "icon": "CloudRain"
+    },
+    {
+      "title": "Riverine flood forecasting",
+      "description": "Hydrologic-hydrodynamic forecasting across Indian basins including the Brahmaputra, Godavari and Narmada.",
+      "icon": "Waves"
+    },
+    {
+      "title": "Real-time inundation forecasting",
+      "description": "Hydrologic-hydrodynamic and statistical-dynamical flood-inundation forecasting with national partners.",
+      "icon": "Gauge"
+    },
+    {
+      "title": "Radar-based rainfall nowcasting",
+      "description": "Deep-learning rainfall nowcasting and forecasting from radar reflectivity data.",
+      "icon": "BrainCircuit"
+    },
+    {
+      "title": "Hydrologic-hydraulic modelling",
+      "description": "Building and validating models with tools such as HEC-RAS, MIKE+ and SWMM.",
+      "icon": "Droplets"
+    },
+    {
+      "title": "Crowdsourced flood intelligence",
+      "description": "Flood data via SnapFlood and flood-information extraction from social media.",
+      "icon": "Database"
+    }
+  ],
+  "studyRegions": [
+    { "name": "Brahmaputra Basin", "kind": "Riverine" },
+    { "name": "Godavari Basin", "kind": "Riverine" },
+    { "name": "Narmada Basin", "kind": "Riverine" },
+    { "name": "Sabari Sub-basin", "kind": "Riverine" },
+    { "name": "Hyderabad", "kind": "Urban" }
+  ],
+  "researchTools": [
+    "HEC-RAS",
+    "MIKE+",
+    "SWMM",
+    "Google Earth Engine",
+    "R & Shiny",
+    "Deep Learning",
+    "Drones / UAV",
+    "Satellite & Radar Data"
+  ]
+}

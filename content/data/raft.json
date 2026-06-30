@@ -1,0 +1,132 @@
+{
+  "raft": {
+    "name": "RAFT",
+    "longName": "Rainfall-runoff Analysis Modelling and Forecasting Tools",
+    "parent": "IIT Hyderabad",
+    "tagline": "We work across rainfall and runoff in cities and riverine areas — so communities can raft through hydroclimatological extremes.",
+    "taglineVerbatim": "We are working on different aspects of rainfall and runoff in both cities and riverine areas so that we raft through hydroclimatological extremes.",
+    "shortPitch": "A hydroinformatics research group and innovation lab at IIT Hyderabad, building data-, physics- and AI-driven systems for rainfall-runoff analysis, flood forecasting and climate-resilient decision-making.",
+    "whatWeDoVerbatim": "Collection, analysis, modelling, and development and dissemination of products in the context of rainfall and runoff — using physics-, physically- and AI/ML-based techniques.",
+    "vision": "To develop a flood information system for both cities and riverine areas so that scientists, engineers, policymakers and citizens can talk to each other — and find realistic solutions that make cities and villages flood resilient.",
+    "mission": "To collect, analyse and model rainfall and runoff across urban and riverine landscapes, and to translate that science into trusted, accessible products that strengthen flood resilience for communities, agencies and decision-makers.",
+    "missionIsEditorial": true,
+    "origin": {
+      "year": 2019,
+      "note": "Origin year provided by the RAFT team; not independently verifiable from public sources."
+    }
+  },
+  "ufis": {
+    "acronym": "UFIS",
+    "expansion": "Urban Flood Information System",
+    "focus": "Developed with a focus on Hyderabad to minimise the effects of urban floods, integrating meteorological, hydrological and stakeholder-relevant aspects.",
+    "goalVerbatim": "Provide reliable and accurate rain and flood forecasts, then deliver flood-relevant information in advance at different locations within the city.",
+    "howBuilt": [
+      "Collection of flood-relevant data",
+      "Understanding of the collected data",
+      "Modelling to simulate and forecast rainfall amounts, flood depths and extent",
+      "Development of products as per the needs of policymakers and stakeholders"
+    ],
+    "maturity": "Reporting tools (SnapFlood) are deployed; the predictive and alerting components of UFIS are in active development."
+  },
+  "approach": [
+    {
+      "title": "Collect",
+      "description": "Flood-relevant data from crowdsourcing (SnapFlood), satellite rainfall, radar reflectivity and social-media signals.",
+      "icon": "Database"
+    },
+    {
+      "title": "Analyse",
+      "description": "Make sense of hydroclimatological data across space and time scales to understand how floods form and evolve.",
+      "icon": "Activity"
+    },
+    {
+      "title": "Model & Forecast",
+      "description": "Simulate and forecast rainfall amounts, flood depths and extent using physics-, physically- and AI/ML-based methods.",
+      "icon": "BrainCircuit"
+    },
+    {
+      "title": "Disseminate",
+      "description": "Build and deliver products tailored to the needs of policymakers, agencies, engineers and citizens.",
+      "icon": "Share2"
+    }
+  ],
+  "values": [
+    {
+      "title": "Scientific rigour",
+      "description": "Peer-reviewed methods, validated models and honest treatment of uncertainty.",
+      "icon": "Microscope"
+    },
+    {
+      "title": "Real-world impact",
+      "description": "Research measured by the decisions it improves and the communities it protects.",
+      "icon": "Target"
+    },
+    {
+      "title": "Open collaboration",
+      "description": "Working across institutions, agencies and disciplines on shared water challenges.",
+      "icon": "Network"
+    },
+    {
+      "title": "Climate resilience",
+      "description": "Tools that help cities and villages adapt to a more extreme, less predictable climate.",
+      "icon": "Leaf"
+    }
+  ],
+  "stats": [
+    { "value": 1822, "suffix": "+", "label": "Citations", "hint": "Google Scholar, 2026 snapshot" },
+    { "value": 15, "label": "h-index", "hint": "Google Scholar" },
+    { "value": 3, "label": "App platforms", "hint": "SnapFlood on Web, Android & iOS" },
+    { "value": 5, "suffix": "+", "label": "Collaborating institutions", "hint": "Across India and abroad" }
+  ],
+  "timeline": [
+    {
+      "year": "2006",
+      "title": "PhD, University of Colorado Boulder",
+      "description": "Dr. Satish Kumar Regonda completes doctoral research in hydroclimatology.",
+      "verified": true
+    },
+    {
+      "year": "2017",
+      "title": "Hydroclimatology comes to IITH",
+      "description": "Dr. Regonda joins the Department of Civil Engineering, IIT Hyderabad.",
+      "verified": true,
+      "image": "/images/iith_campus.jpeg"
+    },
+    {
+      "year": "2019",
+      "title": "RAFT initiative takes shape",
+      "description": "The RAFT research direction forms; Dr. Regonda heads the IITH Department of Climate Change (2019–2022).",
+      "verified": false
+    },
+    {
+      "year": "2021",
+      "title": "Riverine flood modelling",
+      "description": "2D flood-inundation modelling in the Godavari basin; urban flood-hotspot work presented at AGU.",
+      "verified": true
+    },
+    {
+      "year": "2022",
+      "title": "Mapping Hyderabad’s rainfall",
+      "description": "High-temporal-resolution rainfall climatology over Hyderabad published in Urban Climate.",
+      "verified": true
+    },
+    {
+      "year": "2023",
+      "title": "SnapFlood goes live",
+      "description": "SnapFlood deployed on Web, Android and iOS; the VarshaMitra mascot launches to promote community flood reporting.",
+      "verified": true
+    },
+    {
+      "year": "2024",
+      "title": "AI for sustainable cities",
+      "description": "RAFT’s work connects to the Ministry of Education’s AI Centre of Excellence for Sustainable Cities.",
+      "verified": true
+    },
+    {
+      "year": "2025 →",
+      "title": "Scaling UFIS",
+      "description": "Advancing the Urban Flood Information System toward real-time forecasting, alerting and advisory.",
+      "verified": false
+    }
+  ]
+}

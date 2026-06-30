@@ -1,0 +1,100 @@
+{
+  "snapflood": {
+    "slug": "snapflood",
+    "name": "SnapFlood",
+    "tagline": "Real-Time Urban Flood Reporting & Documentation",
+    "status": { "label": "Deployed", "tone": "deployed" },
+    "summary": "A citizen-science platform that turns everyday smartphones into a real-time, global flood-observation network — building the fine-grained data urban flood science has always lacked.",
+    "description": "Traditional flood monitoring works for rivers but struggles with highly variable city floods, which lack fine-resolution rainfall and flood-flow data. SnapFlood lets anyone capture and upload geotagged flood photos and videos with simple metadata, growing a living archive that feeds research, modelling and faster municipal response.",
+    "icon": "Camera",
+    "logo": "/images/brand/snapflood-logo.webp",
+    "accent": "brand",
+    "trl": 8,
+    "images": ["/images/stock/snap-1.jpg", "/images/stock/snap-2.jpg", "/images/stock/urban-flood.jpg"],
+    "features": [
+      { "title": "Capture & upload", "description": "Photos and videos showing flooded areas, water levels and impacts.", "icon": "Camera" },
+      { "title": "Rich metadata", "description": "Add city, area, water-depth estimate, rainfall level and remarks.", "icon": "FileText" },
+      { "title": "Automatic geotagging", "description": "Location sharing tags every submission to a precise point.", "icon": "MapPin" },
+      { "title": "Global coverage", "description": "Contribute flood observations from anywhere in the world.", "icon": "Globe" },
+      { "title": "Real-time archive", "description": "Every report adds to a growing, research-ready flood database.", "icon": "Database" },
+      { "title": "Free & lightweight", "description": "A fast, free mobile app — no specialist hardware required.", "icon": "Smartphone" }
+    ],
+    "howItWorks": [
+      { "title": "Capture", "description": "Citizens submit geotagged photos/videos with metadata via the app or a Google Form." },
+      { "title": "Aggregate", "description": "Submissions flow into a real-time, global flood-data archive." },
+      { "title": "Augment", "description": "Additional flood signals are extracted from social media (X/Twitter)." },
+      { "title": "Feed UFIS", "description": "The archive feeds the Urban Flood Information System’s forecasting and modelling." },
+      { "title": "Act", "description": "Outputs support research, engineering, policy and faster municipal response." }
+    ],
+    "platforms": [
+      { "label": "Web App", "href": "https://snapflood.civil.iith.ac.in", "icon": "Globe" },
+      { "label": "Android — Google Play", "href": "https://play.google.com/store/apps/details?id=com.snapflood", "icon": "Smartphone" },
+      { "label": "iOS · iPadOS · macOS · visionOS", "href": "https://apps.apple.com/us/app/snapflood/id6746365714", "icon": "Apple" }
+    ],
+    "audience": [
+      "Scientists & engineers",
+      "Policymakers & government agencies",
+      "Municipalities",
+      "Urban communities",
+      "General public"
+    ],
+    "links": [
+      { "label": "Open Web App", "href": "https://snapflood.civil.iith.ac.in", "icon": "Globe" },
+      { "label": "Get it on Google Play", "href": "https://play.google.com/store/apps/details?id=com.snapflood", "icon": "Smartphone" },
+      { "label": "Download on the App Store", "href": "https://apps.apple.com/us/app/snapflood/id6746365714", "icon": "Apple" }
+    ],
+    "funding": "Originated from a Government of India DST-SPLICE (Climate Change Programme) funded project, with ongoing support from the AI CoE for Sustainable Cities.",
+    "contact": ["snapflood@iith.ac.in", "satishr@ce.iith.ac.in"]
+  },
+  "varshamitra": {
+    "slug": "varshamitra",
+    "name": "VarshaAnalytics",
+    "tagline": "Rainfall intelligence, made accessible",
+    "status": { "label": "Deployed", "tone": "deployed" },
+    "summary": "RAFT’s rainfall-analytics product — turning station, satellite and model rainfall into clear, actionable insight for communities and decision-makers.",
+    "description": "VarshaAnalytics grew from VarshaMitra — IIT Hyderabad’s 2023 community mascot (Varsha = rain, Mitra = friend) that championed crowd-sourced flood reporting for SnapFlood. Today it brings station, radar, satellite and model rainfall together into a single, easy-to-read view, helping communities and decision-makers understand and act on rainfall and flood risk.",
+    "icon": "CloudRain",
+    "accent": "aqua",
+    "trl": 8,
+    "images": ["/images/stock/varsha-1.jpg", "/images/stock/varsha-2.jpg"],
+    "features": [
+      { "title": "Rainfall monitoring", "description": "A unified view of station, radar and satellite rainfall.", "icon": "CloudRain" },
+      { "title": "Extreme-rainfall insight", "description": "Detect and contextualise heavy-rainfall events.", "icon": "Gauge" },
+      { "title": "Community dashboards", "description": "Accessible rainfall summaries for non-experts.", "icon": "Database" },
+      { "title": "Seasonal outlooks", "description": "Monsoon and seasonal rainfall perspectives.", "icon": "BrainCircuit" }
+    ],
+    "contact": ["satishr@ce.iith.ac.in"]
+  },
+  "roadmap": [
+    {
+      "slug": "ufis-dashboard",
+      "name": "UFIS Public Dashboard",
+      "tagline": "City-scale flood information, in one place",
+      "status": { "label": "Planned", "tone": "planned" },
+      "summary": "A public interface to the Urban Flood Information System — forecasts, depths and advisories for the city.",
+      "icon": "Gauge",
+      "accent": "brand",
+      "placeholder": true
+    },
+    {
+      "slug": "flood-early-warning",
+      "name": "Flood Early-Warning Service",
+      "tagline": "Location-based alerts, ahead of time",
+      "status": { "label": "Planned", "tone": "planned" },
+      "summary": "Targeted, impact-based flood alerts delivered to agencies and citizens before water rises.",
+      "icon": "Bell",
+      "accent": "signal",
+      "placeholder": true
+    },
+    {
+      "slug": "rainfall-nowcast-api",
+      "name": "Rainfall Nowcast API",
+      "tagline": "Radar + AI short-range rainfall, on tap",
+      "status": { "label": "Planned", "tone": "planned" },
+      "summary": "Programmatic access to deep-learning rainfall nowcasts derived from radar reflectivity.",
+      "icon": "Radar",
+      "accent": "indigo",
+      "placeholder": true
+    }
+  ]
+}

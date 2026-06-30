@@ -1,0 +1,51 @@
+{
+  "lead": {
+    "name": "Dr. Satish Kumar Regonda",
+    "shortName": "Dr. Satish Regonda",
+    "role": "Associate Professor & Group Lead",
+    "title": "Associate Professor",
+    "departments": [
+      "Department of Civil Engineering — Hydraulics & Water Resources Engineering",
+      "Department of Climate Change"
+    ],
+    "org": "IIT Hyderabad",
+    "email": "satishr@ce.iith.ac.in",
+    "office": "Room B-212, Department of Civil Engineering, IIT Hyderabad, Kandi, Sangareddy, Telangana, India",
+    "image": "/images/team/satish-regonda.png",
+    "bio": [
+      "Dr. Satish Kumar Regonda is an Associate Professor in the Department of Civil Engineering (Hydraulics & Water Resources Engineering) and the Department of Climate Change at IIT Hyderabad, where he leads RAFT.",
+      "His research spans urban and riverine flood modelling, flood and seasonal water-supply forecasting, hydroclimatology, and the application of statistics, data science and machine learning to water and climate problems.",
+      "Before joining IIT Hyderabad in 2017, he spent more than a decade in the United States — as a research hydrologist with NOAA’s National Weather Service, a hydroclimate consultant at the World Bank, and a research scientist at Johns Hopkins University — contributing to operational forecasting systems. He earned his PhD from the University of Colorado Boulder."
+    ],
+    "education": [
+      { "degree": "Ph.D.", "field": "Hydroclimatology", "institution": "University of Colorado Boulder, USA", "year": "2006" },
+      { "degree": "M.Tech", "field": "Civil Engineering", "institution": "IIT Kanpur", "year": "2002" },
+      { "degree": "B.Tech", "field": "Civil Engineering", "institution": "Kakatiya Institute of Technology & Sciences, Warangal", "year": "2000" }
+    ],
+    "positions": [
+      "Head, Department of Climate Change, IIT Hyderabad — 2019–2022",
+      "Hydroclimate Consultant, World Bank, Washington DC — 2014–2016",
+      "Associate Research Scientist, Johns Hopkins University — 2015–2016",
+      "Research Hydrologist, US National Weather Service / NOAA — 2007–2013",
+      "Postdoctoral Research Associate, NOAA — 2006–2007"
+    ],
+    "interests": [
+      "Urban & riverine flood modelling",
+      "Flood & seasonal water-supply forecasting",
+      "Hydroclimatology & climate science",
+      "Hydrologic modelling & databases for India",
+      "Ensemble & multiscale forecasting",
+      "Statistics, data science & AI/ML"
+    ],
+    "tools": ["R & Shiny", "Google Earth Engine", "Drones / UAV", "HEC-RAS · MIKE+ · SWMM", "Deep learning"],
+    "phoneNote": "Office phone to be confirmed."
+  },
+  "leadLinks": [
+    { "label": "IITH Faculty Page", "href": "https://www.iith.ac.in/ce/satishr/", "icon": "User" },
+    { "label": "Google Scholar", "href": "https://scholar.google.com/citations?user=cTXdUlUAAAAJ&hl=en", "icon": "GraduationCap" },
+    { "label": "ORCID", "href": "https://orcid.org/0000-0003-3188-9415", "icon": "IdCard" },
+    { "label": "ResearchGate", "href": "https://www.researchgate.net/profile/Satish-Regonda", "icon": "Microscope" },
+    { "label": "IRINS / Vidwan", "href": "https://iith.irins.org/profile/107405", "icon": "Library" },
+    { "label": "Personal Site", "href": "https://sites.google.com/iith.ac.in/satishregonda", "icon": "Link" }
+  ]
+}

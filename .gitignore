@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-ssr
+.vite
+.cache
+*.local
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+*.log
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# Local-only research notes & dossier — kept on disk, not committed
+docs/

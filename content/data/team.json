@@ -1,0 +1,15 @@
+{
+  "current": [
+    { "name": "Vamshi", "image": "/images/team/vamshi.jpeg", "role": "PhD Scholar" },
+    { "name": "Lagnajeet", "image": "/images/team/lagnajeet.jpeg", "role": "PhD Scholar" },
+    { "name": "Saipriya", "image": "/images/team/saipriya.jpeg", "role": "PhD Scholar" },
+    { "name": "Surojit", "image": "/images/team/surojit.png", "role": "SDE (Project Associate)" },
+    { "name": "Divyansh", "image": "/images/team/divyansh.png", "role": "SDE (Project Associate)" },
+    { "name": "Jagannath", "image": "/images/team/jagannath.png", "role": "Project Associate" }
+  ],
+  "past": [
+    { "name": "Surya Kiran", "image": "/images/team/surya-kiran.jpeg", "role": "PhD Scholar" },
+    { "name": "Padmini", "image": "/images/team/padmini.jpeg", "role": "PhD Scholar" }
+  ],
+  "joinBlurb": "RAFT regularly welcomes motivated PhD, Master’s and project researchers in hydrology, climate science, computer science and allied fields."
+}
