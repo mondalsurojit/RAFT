@@ -1,25 +1,50 @@
 import { ChevronDown, Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { ButtonLink } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
 import { NAV, type NavGroup } from '@/config/site'
 import { cn } from '@/lib/cn'
 import { Logo } from './Logo'
 
-function isActive(pathname: string, to?: string) {
-  if (!to) return false
-  if (to === '/') return pathname === '/'
-  return pathname === to || pathname.startsWith(`${to}/`)
+/**
+ * Navbar active-state logic — deliberately explicit rather than relying on
+ * <NavLink>. Netlify serves prerendered routes as directory URLs with a trailing
+ * slash (`/products/snapflood/`), which makes NavLink's exact/`end` matching
+ * unreliable and can leave the wrong option highlighted. Here we normalise the
+ * path and pick the single most-specific match, so exactly ONE option per group
+ * is ever highlighted — the one for the page you're on.
+ */
+
+/** Drop any trailing slash so `/x` and `/x/` compare equal. Root stays `/`. */
+function normalizePath(pathname: string) {
+  const p = pathname.replace(/\/+$/, '')
+  return p === '' ? '/' : p
 }
 
-function groupActive(pathname: string, group: NavGroup) {
-  if (isActive(pathname, group.to)) return true
-  return group.children?.some((c) => isActive(pathname, c.to)) ?? false
+/** True when `to` is the current path exactly, or an ancestor segment of it. */
+function matches(path: string, to?: string) {
+  if (!to) return false
+  if (to === '/') return path === '/'
+  return path === to || path.startsWith(`${to}/`)
+}
+
+/**
+ * The single most-specific child link that matches the current path (or null).
+ * Longest match wins, so on `/products/snapflood` only "SnapFlood" lights up —
+ * never also the ancestor "All Products".
+ */
+function activeChildTo(path: string, group: NavGroup): string | null {
+  let best: string | null = null
+  for (const c of group.children ?? []) {
+    if (matches(path, c.to) && (best === null || c.to.length > best.length)) best = c.to
+  }
+  return best
 }
 
 export function Navbar() {
   const { pathname } = useLocation()
+  const path = normalizePath(pathname)
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const [openGroup, setOpenGroup] = useState<string | null>(null)
@@ -61,19 +86,21 @@ export function Navbar() {
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-1">
             {NAV.map((group) => {
-              const active = groupActive(pathname, group)
+              const activeTo = activeChildTo(path, group)
+              const active = matches(path, group.to) || activeTo !== null
               if (!group.children) {
                 return (
                   <li key={group.label}>
-                    <NavLink
+                    <Link
                       to={group.to!}
+                      aria-current={active ? 'page' : undefined}
                       className={cn(
                         'inline-flex items-center rounded-full px-3.5 py-2 text-sm font-medium transition-colors',
                         active ? 'text-brand-700' : 'text-ink-700 hover:text-brand-700',
                       )}
                     >
                       {group.label}
-                    </NavLink>
+                    </Link>
                   </li>
                 )
               }
@@ -107,25 +134,26 @@ export function Navbar() {
                     )}
                   >
                     <div className="overflow-hidden rounded-2xl border border-ink-200/70 bg-white p-2 shadow-card-hover">
-                      {group.children.map((child) => (
-                        <NavLink
-                          key={child.to}
-                          to={child.to}
-                          end
-                          onClick={() => setOpenGroup(null)}
-                          className={({ isActive: a }) =>
-                            cn(
+                      {group.children.map((child) => {
+                        const childActive = child.to === activeTo
+                        return (
+                          <Link
+                            key={child.to}
+                            to={child.to}
+                            aria-current={childActive ? 'page' : undefined}
+                            onClick={() => setOpenGroup(null)}
+                            className={cn(
                               'flex flex-col gap-0.5 rounded-xl px-3.5 py-2.5 transition-colors',
-                              a ? 'bg-brand-50' : 'hover:bg-ink-50',
-                            )
-                          }
-                        >
-                          <span className="text-sm font-semibold text-ink-900">{child.label}</span>
-                          {child.description && (
-                            <span className="text-xs text-ink-500">{child.description}</span>
-                          )}
-                        </NavLink>
-                      ))}
+                              childActive ? 'bg-brand-50' : 'hover:bg-ink-50',
+                            )}
+                          >
+                            <span className="text-sm font-semibold text-ink-900">{child.label}</span>
+                            {child.description && (
+                              <span className="text-xs text-ink-500">{child.description}</span>
+                            )}
+                          </Link>
+                        )
+                      })}
                     </div>
                   </div>
                 </li>
@@ -189,22 +217,23 @@ export function Navbar() {
             <ul className="flex flex-col gap-1">
               {NAV.map((group) => {
                 if (!group.children) {
+                  const active = matches(path, group.to)
                   return (
                     <li key={group.label}>
-                      <NavLink
+                      <Link
                         to={group.to!}
-                        className={({ isActive: a }) =>
-                          cn(
-                            'block rounded-lg px-3 py-2.5 text-[0.95rem] font-semibold transition-colors',
-                            a ? 'text-brand-700' : 'text-ink-900 hover:text-brand-700',
-                          )
-                        }
+                        aria-current={active ? 'page' : undefined}
+                        className={cn(
+                          'block rounded-lg px-3 py-2.5 text-[0.95rem] font-semibold transition-colors',
+                          active ? 'text-brand-700' : 'text-ink-900 hover:text-brand-700',
+                        )}
                       >
                         {group.label}
-                      </NavLink>
+                      </Link>
                     </li>
                   )
                 }
+                const activeTo = activeChildTo(path, group)
                 const expanded = !collapsed[group.label]
                 return (
                   <li key={group.label} className="py-0.5">
@@ -234,22 +263,23 @@ export function Navbar() {
                       <div className="overflow-hidden">
                         {/* Sub-options sit a touch right of their section label so the hierarchy reads clearly. */}
                         <ul className="flex flex-col">
-                          {group.children.map((child) => (
-                            <li key={child.to}>
-                              <NavLink
-                                to={child.to}
-                                end
-                                className={({ isActive: a }) =>
-                                  cn(
+                          {group.children.map((child) => {
+                            const childActive = child.to === activeTo
+                            return (
+                              <li key={child.to}>
+                                <Link
+                                  to={child.to}
+                                  aria-current={childActive ? 'page' : undefined}
+                                  className={cn(
                                     'block rounded-lg py-2 pl-5 pr-3 text-[0.95rem] font-medium transition-colors',
-                                    a ? 'text-brand-700' : 'text-ink-700 hover:text-brand-700',
-                                  )
-                                }
-                              >
-                                {child.label}
-                              </NavLink>
-                            </li>
-                          ))}
+                                    childActive ? 'text-brand-700' : 'text-ink-700 hover:text-brand-700',
+                                  )}
+                                >
+                                  {child.label}
+                                </Link>
+                              </li>
+                            )
+                          })}
                         </ul>
                       </div>
                     </div>
